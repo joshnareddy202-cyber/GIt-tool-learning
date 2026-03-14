@@ -1,6 +1,7 @@
-python 3 "file name")
-git add.
+python3 "file name"
+git add .
 git commit -m "messgae"
 git pull
-git push
-ait status
+git push origin main 
+git status
+here main thigs 
