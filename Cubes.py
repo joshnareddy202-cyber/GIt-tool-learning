@@ -10,6 +10,6 @@ def generate_fibonacci(n):
     return sequence[:n]
 
 # Change this number to see more or fewer results
-count = 10
+count = 20
 print(f"The first {count} Fibonacci numbers are:")
 print(generate_fibonacci(count))
