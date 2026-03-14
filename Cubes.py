@@ -1,18 +1,15 @@
+def generate_fibonacci(n):
+    # Starting values
+    sequence = [0, 1]
+    
+    # Loop to calculate the next numbers
+    while len(sequence) < n:
+        next_value = sequence[-1] + sequence[-2]
+        sequence.append(next_value)
+    
+    return sequence[:n]
 
-# Method 1: Simple calculation
-number = 3
-cube = number ** 3
-print(f
-
-"The cube of {number} is {cube}")
-
-# Method 2: Cubing a range of numbers
-print("\nCubing numbers from 1 to 5:")
-for x in range(1, 6):
-    print(f"{x} cubed is {x**3}")
-
-# Method 3: Using a function (Professional approach)
-def get_cube(num):
-    return num * num * num
-
-print(f"\nUsing a function for 10: {get_cube(10)}")
+# Change this number to see more or fewer results
+count = 10
+print(f"The first {count} Fibonacci numbers are:")
+print(generate_fibonacci(count))
